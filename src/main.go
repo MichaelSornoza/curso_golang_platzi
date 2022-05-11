@@ -4,55 +4,47 @@ import "fmt"
 
 func main() {
 
-	// Declare a constant
-	fmt.Println("Constants----------------------------------------------------")
-
-	const Pi float64 = 3.14
-	const Pi2 = 3.14
-	const text string = "Hello World"
-
-	fmt.Println("Pi: ", Pi)
-	fmt.Println("Pi2: ", Pi2)
-	fmt.Println("text: ", text)
-
-	// Declare a variable
-	fmt.Println("Variables----------------------------------------------------")
-
-	base := 12
-	var height int = 14
-	var area int = base * height
-
-	fmt.Println("base: ", base)
-	fmt.Println("height: ", height)
-	fmt.Println("area: ", area)
-
-	// Zero values
-	fmt.Println("Zero values----------------------------------------------------")
-
-	var zero int
-	var zerob float64
-	var zerostring string
-	var zerobool bool
-
-	fmt.Println("zero: ", zero)
-	fmt.Println("zerob: ", zerob)
-	fmt.Println("zerostring: ", zerostring)
-	fmt.Println("zerobool: ", zerobool)
-
-	zero = 12
-	zerob = 12.34
-	zerostring = "Hello World"
-	zerobool = true
-
-	fmt.Println("zero: ", zero)
-	fmt.Println("zerob: ", zerob)
-	fmt.Println("zerostring: ", zerostring)
-	fmt.Println("zerobool: ", zerobool)
-
-	// Excercise 1
-	fmt.Println("Excercise 1----------------------------------------------------")
-
 	const squareBase = 10
 	squareArea := squareBase * squareBase
-	fmt.Println("squareArea: ", squareArea)
+	fmt.Println("The square Area is: ", squareArea)
+
+	x := 30
+	y := 10
+
+	result := x + y
+	fmt.Println("The result is: ", result)
+
+	result = x - y
+	fmt.Println("The result of the subtraction is: ", result)
+
+	result = x * y
+	fmt.Println("The result of the multiplication is: ", result)
+
+	result = x / y
+	fmt.Println("The result of the division is: ", result)
+
+	result = x % y
+	fmt.Println("The result of the rest is: ", result)
+
+	result = x ^ y
+	fmt.Println("The result of the exponentiation is: ", result)
+
+	result = x & y
+	fmt.Println("The result of the bitwise AND is: ", result)
+
+	result = x | y
+	fmt.Println("The result of the bitwise OR is: ", result)
+
+	result++
+	fmt.Println("The result of the increment is: ", result)
+
+	result--
+	fmt.Println("The result of the decrement is: ", result)
+
+	result += y
+	fmt.Println("The result of the addition is: ", result)
+
+	result -= y
+	fmt.Println("The result of the subtraction is: ", result)
+
 }
