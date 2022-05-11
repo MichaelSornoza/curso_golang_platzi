@@ -2,27 +2,39 @@ package main
 
 import "fmt"
 
+func printAMessage(message string) {
+
+	fmt.Println(message)
+
+}
+
+func printAMessageWithThreeArgs(message, sender, receiver string) {
+
+	finalMessage := fmt.Sprintf("%s: -> %s \nReceived: %s", sender, message, receiver)
+
+	fmt.Println(finalMessage)
+}
+
+func returnValue(value int) int {
+	return value * 2
+}
+
+func doubleReturn(value int) (int, int) {
+	return value * 2, value * 3
+}
+
 func main() {
 
-	helloMessage := "Hello"
-	worldMessage := "World"
+	printAMessage("Hello World")
 
-	// Println - Print and newline
-	fmt.Println(helloMessage, worldMessage)
+	printAMessageWithThreeArgs("Hello World", "John", "Mary")
 
-	// Printf
-	nombre := "Platzi"
-	cursos := 500
+	value := returnValue(2)
+	fmt.Println(value)
 
-	fmt.Printf("%s tiene mas de %d cursos\n", nombre, cursos)
-	fmt.Printf("%v tiene mas de %v cursos\n", nombre, cursos)
+	value1, value2 := doubleReturn(2)
+	fmt.Println(value1, value2)
 
-	// Sprintf
-	text := fmt.Sprintf("%s tiene mas de %d cursos", nombre, cursos)
-	fmt.Println(text)
-
-	// Type of variable
-	fmt.Printf("%T\n", nombre)
-	fmt.Printf("%T\n", cursos)
-
+	value3, _ := doubleReturn(3)
+	fmt.Println(value3)
 }
