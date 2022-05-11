@@ -4,47 +4,25 @@ import "fmt"
 
 func main() {
 
-	const squareBase = 10
-	squareArea := squareBase * squareBase
-	fmt.Println("The square Area is: ", squareArea)
+	helloMessage := "Hello"
+	worldMessage := "World"
 
-	x := 30
-	y := 10
+	// Println - Print and newline
+	fmt.Println(helloMessage, worldMessage)
 
-	result := x + y
-	fmt.Println("The result is: ", result)
+	// Printf
+	nombre := "Platzi"
+	cursos := 500
 
-	result = x - y
-	fmt.Println("The result of the subtraction is: ", result)
+	fmt.Printf("%s tiene mas de %d cursos\n", nombre, cursos)
+	fmt.Printf("%v tiene mas de %v cursos\n", nombre, cursos)
 
-	result = x * y
-	fmt.Println("The result of the multiplication is: ", result)
+	// Sprintf
+	text := fmt.Sprintf("%s tiene mas de %d cursos", nombre, cursos)
+	fmt.Println(text)
 
-	result = x / y
-	fmt.Println("The result of the division is: ", result)
-
-	result = x % y
-	fmt.Println("The result of the rest is: ", result)
-
-	result = x ^ y
-	fmt.Println("The result of the exponentiation is: ", result)
-
-	result = x & y
-	fmt.Println("The result of the bitwise AND is: ", result)
-
-	result = x | y
-	fmt.Println("The result of the bitwise OR is: ", result)
-
-	result++
-	fmt.Println("The result of the increment is: ", result)
-
-	result--
-	fmt.Println("The result of the decrement is: ", result)
-
-	result += y
-	fmt.Println("The result of the addition is: ", result)
-
-	result -= y
-	fmt.Println("The result of the subtraction is: ", result)
+	// Type of variable
+	fmt.Printf("%T\n", nombre)
+	fmt.Printf("%T\n", cursos)
 
 }
